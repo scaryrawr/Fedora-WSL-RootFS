@@ -10,4 +10,3 @@ RUN dnf update -y
 RUN dnf install mesa-dri-drivers mesa-vdpau-drivers mesa-va-drivers -y
 RUN cd bottle-imp && make internal-systemd internal-binfmt DESTDIR=/usr
 RUN dnf remove make -y
-RUN rm -rf bottle-imp
