@@ -6,7 +6,6 @@
 .gitignore
 .gitignore
 .gitmodules
-bottle-imp
 Dockerfile
 release.txt
 README.md
