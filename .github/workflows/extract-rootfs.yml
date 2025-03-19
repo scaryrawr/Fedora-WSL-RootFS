@@ -41,7 +41,7 @@ jobs:
 
       - name: Extract RootFS
         run: |
-          docker create --platform ${{ matrix.platform }} --name fedora fedora echo "Fedora Linux"
+          docker create --name fedora fedora echo "Fedora Linux"
           docker export -o rootfs.${{ steps.vars.outputs.arch }}.tar fedora
           gzip rootfs.${{ steps.vars.outputs.arch }}.tar
           docker rm fedora
