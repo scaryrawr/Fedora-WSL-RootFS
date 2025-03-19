@@ -37,7 +37,7 @@ jobs:
       - name: Set Vars
         id: vars
         run: |
-          echo "arch=$(uname -m)" >> "$GITHUB_OUTPUT"
+          echo "arch=$(dpkg --print-architecture)" >> "$GITHUB_OUTPUT"
 
       - name: Extract RootFS
         run: |
